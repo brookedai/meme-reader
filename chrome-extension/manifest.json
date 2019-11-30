@@ -1,8 +1,22 @@
 {
   "name": "Meme Reader",
   "version": "1.0",
-  "description": "Build an Extension!",
-  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "description": "Meme Reader",
+  "permissions": ["activeTab", "declarativeContent", "storage", "https://some-random-api.ml/*", "https://jsonplaceholder.typicode.com/*", "ttsEngine", "tts"],
+  "tts_engine": {
+    "voices": [
+      {
+        "voice_name": "Alice",
+        "lang": "en-US",
+        "event_types": ["start", "marker", "end"]
+      },
+      {
+        "voice_name": "Pat",
+        "lang": "en-US",
+        "event_types": ["end"]
+      }
+    ]
+  },
   "options_page": "options.html",
   "background": {
     "scripts": ["background.js"],
@@ -10,7 +24,7 @@
   },
   "content_scripts": [{
 		"matches": ["<all_urls>"],
-		"js": ["helloWorld.js"]
+		"js": ["content.js"]
 	}],
   "page_action": {
     "default_popup": "popup.html",
