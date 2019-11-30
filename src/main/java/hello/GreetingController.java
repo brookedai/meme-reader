@@ -14,8 +14,8 @@ public class GreetingController {
     private final AtomicLong counter = new AtomicLong();
 
     @ResponseBody
-    @RequestMapping("/greeting")
-    public Greeting greeting(@RequestParam(value="description", defaultValue="") String desc) {
+    @RequestMapping("/")
+    public Greeting greeting(@RequestParam(value="desc", defaultValue="") String desc) {
         return new Greeting(desc);
     }
 }
