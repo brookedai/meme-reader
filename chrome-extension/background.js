@@ -1,6 +1,6 @@
 chrome.runtime.onMessage.addListener(function(message, sender, senderResponse){
   if(message.msg === "image"){
-    fetch('https://thawing-earth-15388.herokuapp.com/?desc=test')
+    fetch('http://localhost:8080/?url=https://www.fosi.org/media/images/funny-game-of-thrones-memes-coverimage.width-800.jpg')
           .then(response => response.text())
           .then(data => {
             let dataObj = JSON.parse(data);
@@ -13,5 +13,5 @@ chrome.runtime.onMessage.addListener(function(message, sender, senderResponse){
 
 chrome.runtime.onMessage.addListener(function(request) {
   chrome.tts.speak(request.toSay, 
-                  { rate: 0.8, onEvent: function(event) {}}, function() {});
+                  { rate: 0.6, onEvent: function(event) {}}, function() {});
 });

@@ -22,7 +22,7 @@ public class VisionController {
     private CloudVisionTemplate cloudVisionTemplate;
     // [END spring_vision_autowire]
 
-    @RequestMapping("/getTextDetection")
+    @RequestMapping("/")
     public String getTextDetection(@RequestParam(value="url") String url) {
         Resource imageResource = this.resourceLoader.getResource("url:" + url);
         AnnotateImageResponse response = this.cloudVisionTemplate.analyzeImage(
@@ -30,6 +30,6 @@ public class VisionController {
         String resp = response.getTextAnnotationsList().toString();
         System.out.println(resp);
         System.out.println("RESP: " + p.getString(resp));
-        return p.getString(resp);
+        return "{\"desc\":\""+p.getString(resp)+"\"}";
     }
 }

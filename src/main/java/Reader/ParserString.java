@@ -25,7 +25,7 @@ public class ParserString {
             while (message.contains("\\n")) {
                 message = message.replace("\\n", " ");
             }
-            message = message.substring(0, message.length()-1);
+            message = message.substring(0, message.length()-2);
         }
 
         return message; //stud
