@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class VisionController {
+    ParserString p = new ParserString();
 
     @Autowired
     private ResourceLoader resourceLoader;
@@ -26,6 +27,9 @@ public class VisionController {
         Resource imageResource = this.resourceLoader.getResource("url:" + url);
         AnnotateImageResponse response = this.cloudVisionTemplate.analyzeImage(
                 imageResource, Feature.Type.DOCUMENT_TEXT_DETECTION);
-        return response.getTextAnnotationsList().toString();
+        String resp = response.getTextAnnotationsList().toString();
+        System.out.println(resp);
+        System.out.println("RESP: " + p.getString(resp));
+        return p.getString(resp);
     }
 }

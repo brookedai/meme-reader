@@ -4,9 +4,11 @@ public class ParserString {
 
     public String getString(String memeDescription) {
         String message = "";
-        if (memeDescription.contains("description:") && memeDescription.contains(" bounding_poly")) {
+        if (memeDescription.contains("description:") && memeDescription.contains("bounding_poly")) {
+
+            System.out.println("Helo");
             int startIndex = memeDescription.indexOf("description: ");
-            int endIndex = memeDescription.indexOf(" bounding_poly", startIndex);
+            int endIndex = memeDescription.indexOf("bounding_poly", startIndex);
             if (endIndex == -1) {
                 endIndex = memeDescription.length();
             }
