@@ -1,6 +1,6 @@
 chrome.runtime.onMessage.addListener(function(message, sender, senderResponse){
   if(message.msg === "image"){
-    fetch('http://localhost:8080/?url=https://www.fosi.org/media/images/funny-game-of-thrones-memes-coverimage.width-800.jpg')
+    fetch('http://localhost:8080/?url=' + message.url)
           .then(response => response.text())
           .then(data => {
             let dataObj = JSON.parse(data);
@@ -12,6 +12,8 @@ chrome.runtime.onMessage.addListener(function(message, sender, senderResponse){
 });
 
 chrome.runtime.onMessage.addListener(function(request) {
+  // let prefSpeed = chrome.storage.local.get("speed") * 0.8;
+  // alert(prefSpeed);
   chrome.tts.speak(request.toSay, 
-                  { rate: 0.6, onEvent: function(event) {}}, function() {});
+                  { rate: Math.max(localStorage.getItem("speed") * 0.8, 0.5), onEvent: function(event) {}}, function() {});
 });

@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="13c2d546-47e8-4212-b55b-2c5861ef465c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Reader/ParserString.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reader/ParserString.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Reader/VisionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reader/VisionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-extension/background.js" beforeDir="false" afterPath="$PROJECT_DIR$/chrome-extension/background.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-extension/content.js" beforeDir="false" afterPath="$PROJECT_DIR$/chrome-extension/content.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-extension/options.html" beforeDir="false" afterPath="$PROJECT_DIR$/chrome-extension/options.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-extension/options.js" beforeDir="false" afterPath="$PROJECT_DIR$/chrome-extension/options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chrome-extension/popup.html" beforeDir="false" afterPath="$PROJECT_DIR$/chrome-extension/popup.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,7 +31,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-215">
+            <state relative-caret-position="195">
               <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
             </state>
           </provider>
@@ -37,8 +40,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Reader/VisionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
+            <state relative-caret-position="480">
+              <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chrome-extension/background.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/chrome-extension/options.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="355">
+              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/chrome-extension/content.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="64" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -52,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Reader/ParserString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="70" lean-forward="true" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+            <state relative-caret-position="315">
+              <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
             </state>
           </provider>
         </entry>
@@ -103,6 +136,7 @@
         <option value="$PROJECT_DIR$/src/main/java/hello/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/Greeting.java" />
         <option value="$PROJECT_DIR$/src/main/java/hello/GreetingController.java" />
+        <option value="$PROJECT_DIR$/chrome-extension/background.js" />
         <option value="$PROJECT_DIR$/src/main/java/Reader/VisionController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Reader/ParserString.java" />
       </list>
@@ -364,7 +398,7 @@
       <option name="presentableId" value="Default" />
       <updated>1575143299300</updated>
       <workItem from="1575143301570" duration="7701000" />
-      <workItem from="1575159430371" duration="2742000" />
+      <workItem from="1575159430371" duration="4102000" />
     </task>
     <task id="LOCAL-00001" summary="the real one maybe">
       <created>1575143723628</created>
@@ -394,7 +428,21 @@
       <option name="project" value="LOCAL" />
       <updated>1575152535708</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fixed parser">
+      <created>1575162615710</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575162615710</updated>
+    </task>
+    <task id="LOCAL-00006" summary="updated js to work with localhost with hardcoded url">
+      <created>1575163864448</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575163864449</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -403,7 +451,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10977000" />
+    <option name="totallyTimeSpent" value="12337000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="17" y="23" width="1406" height="825" extended-state="0" />
@@ -419,7 +467,7 @@
       <window_info anchor="bottom" id="Version Control" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.3287858" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" weight="0.3287858" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.3287858" />
+      <window_info active="true" anchor="bottom" id="Messages" order="3" visible="true" weight="0.3287858" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
@@ -440,7 +488,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
-      <window_info active="true" anchor="right" id="Run" order="8" visible="true" weight="0.21774194" />
+      <window_info anchor="right" id="Run" order="8" visible="true" weight="0.21774194" />
       <window_info anchor="right" id="Database" order="9" />
     </layout>
   </component>
@@ -452,7 +500,9 @@
     <MESSAGE value="this maybe works a little" />
     <MESSAGE value="local runs the tutorial" />
     <MESSAGE value="displays given description" />
-    <option name="LAST_COMMIT_MESSAGE" value="displays given description" />
+    <MESSAGE value="fixed parser" />
+    <MESSAGE value="updated js to work with localhost with hardcoded url" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated js to work with localhost with hardcoded url" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/test/java/com/memes/memereader/MemeReaderApplicationTests.java">
@@ -493,29 +543,11 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/hello/GreetingController.java" />
     <entry file="file://$PROJECT_DIR$/chrome-extension/popup.js" />
     <entry file="file://$PROJECT_DIR$/chrome-extension/helloWorld.js" />
-    <entry file="file://$PROJECT_DIR$/chrome-extension/background.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chrome-extension/options.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/chrome-extension/popup.html">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chrome-extension/options.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/chrome-extension/manifest.json">
       <provider selected="true" editor-type-id="text-editor" />
@@ -523,9 +555,16 @@
     <entry file="file://$PROJECT_DIR$/key.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Reader/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-215">
+        <state relative-caret-position="195">
           <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
         </state>
       </provider>
@@ -539,22 +578,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Reader/VisionController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Reader/Application.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        <state relative-caret-position="480">
+          <caret line="32" column="29" lean-forward="true" selection-start-line="32" selection-start-column="29" selection-end-line="32" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Reader/ParserString.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="70" lean-forward="true" selection-start-line="14" selection-start-column="70" selection-end-line="14" selection-end-column="70" />
+        <state relative-caret-position="315">
+          <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chrome-extension/content.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="64" selection-start-line="2" selection-start-column="64" selection-end-line="2" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chrome-extension/background.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="11" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chrome-extension/options.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
