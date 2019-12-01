@@ -28,4 +28,26 @@ public class ParserTest {
         assertEquals(result2, expected2);
 
     }
+
+    @Test
+    public void testImage() {
+        ParserString p = new ParserString();
+
+        String link1 = "[mid: \"/j/3gbwgn\" description: \"People in nature\" score: 0.9788887 topicality: 0.9788887 , mid: \"/m/01bqvp\" description: \"Sky\" score: 0.96265477 topicality: 0.96265477 , mid: \"/m/01c7cq\" description: \"Grassland\" score: 0.9511736 topicality: 0.9511736 , mid: \"/m/02py09\" description: \"Natural environment\" score: 0.8843857 topicality: 0.8843857 , mid: \"/m/0csby\" description: \"Cloud\" score: 0.85430866 topicality: 0.85430866 , mid: \"/m/0cblv\" description: \"Ecoregion\" score: 0.84442484 topicality: 0.84442484 , mid: \"/m/0f45l\" description: \"Steppe\" score: 0.8439305 topicality: 0.8439305 , mid: \"/m/023bbt\" description: \"Wilderness\" score: 0.8419837 topicality: 0.8419837 , mid: \"/m/047vlmn\" description: \"Outerwear\" score: 0.82950807 topicality: 0.82950807 , mid: \"/m/08t9c_\" description: \"Grass\" score: 0.82184535 topicality: 0.82184535 ]";
+
+        String result1 = p.getImageDesc(link1);
+        assertEquals(result1, "People in nature, Sky, Grassland");
+    }
+
+    @Test
+    public void testImageDesc() {
+        ParserString p = new ParserString();
+
+        String link1 = "[mid: \"/j/3gbwgn\" description: \"People in nature\" score: 0.9788887 topicality: 0.9788887 , mid: \"/m/01bqvp\" description: \"Sky\" score: 0.96265477 topicality: 0.96265477 , mid: \"/m/01c7cq\" description: \"Grassland\" score: 0.9511736 topicality: 0.9511736 , mid: \"/m/02py09\" description: \"Natural environment\" score: 0.8843857 topicality: 0.8843857 , mid: \"/m/0csby\" description: \"Cloud\" score: 0.85430866 topicality: 0.85430866 , mid: \"/m/0cblv\" description: \"Ecoregion\" score: 0.84442484 topicality: 0.84442484 , mid: \"/m/0f45l\" description: \"Steppe\" score: 0.8439305 topicality: 0.8439305 , mid: \"/m/023bbt\" description: \"Wilderness\" score: 0.8419837 topicality: 0.8419837 , mid: \"/m/047vlmn\" description: \"Outerwear\" score: 0.82950807 topicality: 0.82950807 , mid: \"/m/08t9c_\" description: \"Grass\" score: 0.82184535 topicality: 0.82184535 ]";
+
+        String link2 = "[locale: \"la\" description: \"i wan fuit gummy\\nFUIT GUMMY FUIT GUMMY\\n\" bounding_poly " +
+                "{ vertices { x: 57 y: 38 } vertices { x: 687 y: 38 } vertices { x: 687 y: 764 } vertices { x: 57 y: 764 } } , description: \"i\" bounding_poly { vertices { x: 161 y: 38 } vertices { x: 176 y: 38 } vertices { x: 176 y: 92 } vertices { x: 161 y: 92 } } , description: \"wan\" bounding_poly { vertices { x: 181 y: 38 } vertices { x: 265 y: 38 } vertices { x: 265 y: 92 } vertices { x: 181 y: 92 } } , description: \"fuit\" bounding_poly { vertices { x: 296 y: 38 } vertices { x: 356 y: 38 } vertices { x: 356 y: 92 } vertices { x: 296 y: 92 } } , description: \"gummy\" bounding_poly { vertices { x: 374 y: 38 } vertices { x: 525 y: 38 } vertices { x: 525 y: 92 } vertices { x: 374 y: 92 } } , description: \"FUIT\" bounding_poly { vertices { x: 58 y: 683 } vertices { x: 160 y: 684 } vertices { x: 159 y: 757 } vertices { x: 57 y: 756 } } , description: \"GUMMY\" bounding_poly { vertices { x: 169 y: 685 } vertices { x: 366 y: 687 } vertices { x: 365 y: 759 } vertices { x: 168 y: 757 } } , description: \"FUIT\" bounding_poly { vertices { x: 380 y: 687 } vertices { x: 481 y: 688 } vertices { x: 480 y: 761 } vertices { x: 379 y: 760 } } , description: \"GUMMY\" bounding_poly { vertices { x: 493 y: 689 } vertices { x: 687 y: 691 } vertices { x: 686 y: 764 } vertices { x: 492 y: 762 } } ]";
+
+        p.getString_ImageDesc(link2, link1);
+    }
 }
