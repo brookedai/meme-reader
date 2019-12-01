@@ -25,11 +25,14 @@ public class VisionController {
     @RequestMapping("/")
     public String getTextDetection(@RequestParam(value="url") String url) {
         Resource imageResource = this.resourceLoader.getResource("url:" + url);
-        AnnotateImageResponse response = this.cloudVisionTemplate.analyzeImage(
-                imageResource, Feature.Type.DOCUMENT_TEXT_DETECTION);
-        String resp = response.getTextAnnotationsList().toString();
-        System.out.println(resp);
-        System.out.println("RESP: " + p.getString(resp));
-        return "{\"desc\":\""+p.getString(resp)+"\"}";
+        AnnotateImageResponse textResponse = this.cloudVisionTemplate.analyzeImage(
+                imageResource, Feature.Type.TEXT_DETECTION);
+        AnnotateImageResponse descResponse = this.cloudVisionTemplate.analyzeImage(
+                imageResource, Feature.Type.LABEL_DETECTION);
+
+        String stringTextResponse = textResponse.getTextAnnotationsList().toString();
+        String stringDescResponse = descResponse.getLabelAnnotationsList().toString();
+
+        return "{\"desc\":\""+p.getString(stringTextResponse )+"\"}";
     }
 }
